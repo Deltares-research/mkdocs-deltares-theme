@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://deltares-research.github.io/mkdocs-deltares-theme/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://deltares-research.github.io/mkdocs-deltares-theme/mkdocs/create_your_site/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://deltares-research.github.io/mkdocs-deltares-theme/mkdocs/deploy_your_site/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://deltares-research.github.io/mkdocs-deltares-theme/mkdocs/mkdocs/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://deltares-research.github.io/mkdocs-deltares-theme/style_examples/buttons/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://deltares-research.github.io/mkdocs-deltares-theme/style_examples/headers/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://deltares-research.github.io/mkdocs-deltares-theme/style_examples/lists/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://deltares-research.github.io/mkdocs-deltares-theme/style_examples/tables/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+</urlset>
