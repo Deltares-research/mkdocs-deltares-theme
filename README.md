@@ -62,3 +62,10 @@ mkdocs serve
 Open [http://127.0.0.1:8000/mkdocs-deltares-theme](http://127.0.0.1:8000/mkdocs-deltares-theme) in your browser. The
 server rebuilds the site when documentation or configuration files change.
 Press `Ctrl+C` to stop it.
+
+## Check out the site
+
+> [!NOTE]
+> Please note that the site is a work in progress.
+
+The site is available at [https://deltares.github.io/mkdocs-deltares-theme/](https://deltares.github.io/mkdocs-deltares-theme/).
