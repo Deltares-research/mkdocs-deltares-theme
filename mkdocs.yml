@@ -1,0 +1,57 @@
+site_name: MkDocs Deltares Theme
+site_url: https://deltares-research.github.io/mkdocs-deltares-theme/
+theme:
+  name: material
+  custom_dir: deltares/overrides
+  logo: assets/logo-of-deltares.svg
+  favicon: assets/favicon-16x16.png
+  language: en
+
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.integrate
+    -
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+    - Home: index.md
+    - Get started:
+        - MkDocs: mkdocs/mkdocs.md
+        - Create your site: mkdocs/create_your_site.md
+        - Deploy your site: mkdocs/deploy_your_site.md
+    - Deltares styles:
+        - Buttons: style_examples/buttons.md
+        - Headers: style_examples/headers.md
+        - Lists: style_examples/lists.md
+        - Tables: style_examples/tables.md
+
+
+
+#extra_css:
+#  - stylesheets/extra.css
+#extra_javascript:
+#  - javascripts/extra.js
