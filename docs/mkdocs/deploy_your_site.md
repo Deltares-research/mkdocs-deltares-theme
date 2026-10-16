@@ -46,6 +46,16 @@ mkdocs serve
 
 Open [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your browser. The server rebuilds the site when you save documentation changes; stop it with `Ctrl+C`.
 
+## Publishing your site
+
+There are different ways to publish your site, depending on the platform you want to use. The most common platforms are GitHub Pages and GitLab Pages.
+
+On the [Material for MkDocs documentation](https://squidfunk.github.io/mkdocs-material/publishing-your-site/) you can find instructions on how to deploy your site to different platforms.
+
+Here are some specific instructions for publishing to one of the Deltares supported platforms.
+
+``mkdocs gh-deploy --force``
+
 ## Deltares supported Pages
 
 Deltares offers a number of hosting locations for your documentation site. 
