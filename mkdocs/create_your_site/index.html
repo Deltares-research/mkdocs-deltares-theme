@@ -476,6 +476,31 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Create your site
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -499,6 +524,130 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configure mkdocs.yml
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure mkdocs.yml">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#site-name-and-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Site name and URL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keep-the-deltares-theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keep the Deltares theme
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation-and-interface-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navigation and interface features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organize-pages-with-nav" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organize pages with nav
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-markdown-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enable Markdown features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-project-specific-css-or-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add project-specific CSS or JavaScript
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preview-your-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preview your configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -792,6 +941,225 @@
 
 
 <h1 id="create-your-site">Create your site</h1>
+<p>The <strong>Deltares MkDocs template</strong> is a starting point for creating your own documentation site. It provides a basic structure and configuration that you can customize to fit your needs.</p>
+<p>In this guide, we will walk you through the steps to customize your own documentation site using the Deltares MkDocs template.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Python 3</li>
+<li>pip</li>
+</ul>
+<p>You also need Material for MkDocs installed in your Python environment. See
+<a href="../deploy_your_site/#running-your-site-locally">Running your site locally</a> for
+the setup commands.</p>
+<h2 id="configure-mkdocsyml">Configure mkdocs.yml</h2>
+<p>The <code>mkdocs.yml</code> file in the project root controls your site's name, theme,
+navigation, and Markdown features. Edit this file rather than files in the
+generated <code>site</code> directory, which are overwritten on each build.</p>
+<p>YAML uses indentation to group settings. Use spaces, not tabs, and keep list
+items aligned. Update the existing sections rather than adding duplicate
+top-level keys such as <code>theme</code> or <code>nav</code>.</p>
+<h3 id="site-name-and-url">Site name and URL</h3>
+<p>Start by replacing the demonstration site's details with your own:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">My project documentation</span>
+<span class="nt">site_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://deltares-research.github.io/my-project/</span>
+<span class="nt">site_description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">User and developer documentation for my project.</span>
+<span class="nt">site_author</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deltares</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>site_name</code></td>
+<td>The name displayed in the header and browser title.</td>
+</tr>
+<tr>
+<td><code>site_url</code></td>
+<td>The full public URL where the site will be published, including a project subpath when applicable. Keep the trailing slash.</td>
+</tr>
+<tr>
+<td><code>site_description</code></td>
+<td>An optional summary used in the site's HTML metadata.</td>
+</tr>
+<tr>
+<td><code>site_author</code></td>
+<td>Optional author metadata.</td>
+</tr>
+</tbody>
+</table>
+<p>The URL above is an example; use your actual publishing location. Setting
+<code>site_url</code> does not deploy the site. See <a href="../deploy_your_site/">Deploy your site</a>
+for publishing instructions.</p>
+<h3 id="keep-the-deltares-theme">Keep the Deltares theme</h3>
+<p>This project uses Material for MkDocs with local Deltares template overrides.
+Keep the following settings to retain the Deltares layout, logo, and colours:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">theme</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span>
+<span class="w">  </span><span class="nt">custom_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deltares/overrides</span>
+<span class="w">  </span><span class="nt">logo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">assets/logo-of-deltares.svg</span>
+<span class="w">  </span><span class="nt">favicon</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">assets/favicon-16x16.png</span>
+<span class="w">  </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">en</span>
+<span class="w">  </span><span class="nt">palette</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">scheme</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span>
+<span class="w">      </span><span class="nt">primary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">custom</span>
+<span class="w">      </span><span class="nt">accent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">custom</span>
+</code></pre></div>
+<p><code>custom_dir</code> is relative to the directory containing <code>mkdocs.yml</code>. It loads
+the templates and assets from <code>deltares/overrides</code>, including the Deltares
+stylesheet through <code>main.html</code>. Keep that directory when reusing this
+configuration in another project; installing Material alone does not provide
+these overrides.</p>
+<p>The logo and favicon paths refer to site assets. The supplied files are in
+<code>deltares/overrides/assets</code>. To use your own images, place them in an <code>assets</code>
+directory under <code>docs</code> and change <code>logo</code> and <code>favicon</code> to their paths relative
+to <code>docs</code>, for example <code>assets/my-project-logo.svg</code>.</p>
+<p><code>language</code> controls the theme's interface labels, not the language of your
+Markdown content. For Dutch interface labels, use <code>language: nl</code>.</p>
+<h3 id="navigation-and-interface-features">Navigation and interface features</h3>
+<p>The <code>features</code> list belongs inside the existing <code>theme</code> section:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">theme</span><span class="p">:</span>
+<span class="w">  </span><span class="c1"># Keep the other theme settings here.</span>
+<span class="w">  </span><span class="nt">features</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.tabs</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.tabs.sticky</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.expand</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.path</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.top</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.footer</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search.suggest</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search.highlight</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.copy</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc.integrate</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>navigation.tabs</code></td>
+<td>Shows top-level navigation sections as tabs on larger screens.</td>
+</tr>
+<tr>
+<td><code>navigation.tabs.sticky</code></td>
+<td>Keeps navigation tabs visible while scrolling.</td>
+</tr>
+<tr>
+<td><code>navigation.expand</code></td>
+<td>Expands navigation sections by default.</td>
+</tr>
+<tr>
+<td><code>navigation.path</code></td>
+<td>Enables breadcrumb navigation in Material versions that support it.</td>
+</tr>
+<tr>
+<td><code>navigation.top</code></td>
+<td>Adds a back-to-top button.</td>
+</tr>
+<tr>
+<td><code>navigation.footer</code></td>
+<td>Shows previous and next page links in the footer.</td>
+</tr>
+<tr>
+<td><code>search.suggest</code></td>
+<td>Enables search suggestions.</td>
+</tr>
+<tr>
+<td><code>search.highlight</code></td>
+<td>Highlights matching search terms on destination pages.</td>
+</tr>
+<tr>
+<td><code>content.code.copy</code></td>
+<td>Adds copy buttons to code blocks.</td>
+</tr>
+<tr>
+<td><code>toc.integrate</code></td>
+<td>Places the page's table of contents in the left navigation instead of a separate sidebar.</td>
+</tr>
+</tbody>
+</table>
+<p>Remove a feature's list entry to disable it. Do not leave an empty <code>-</code> entry.
+Feature availability can depend on your installed Material version; consult
+the <a href="https://squidfunk.github.io/mkdocs-material/setup/">Material setup documentation</a>
+when choosing additional features.</p>
+<h3 id="organize-pages-with-nav">Organize pages with nav</h3>
+<p>Use the top-level <code>nav</code> section to choose page labels, order, and grouping.
+For example, the following uses pages already included in this project:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">nav</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Home</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Get started</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">MkDocs</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs/mkdocs.md</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Create your site</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs/create_your_site.md</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Deploy your site</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs/deploy_your_site.md</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Deltares styles</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Buttons</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">style_examples/buttons.md</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Headers</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">style_examples/headers.md</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Lists</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">style_examples/lists.md</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Tables</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">style_examples/tables.md</span>
+</code></pre></div>
+<p>Page paths are relative to <code>docs</code> by default, not to <code>mkdocs.yml</code>. For example,
+to add a user guide, create <code>user_guide.md</code> inside <code>docs</code>, then add
+<code>- User guide: user_guide.md</code> at the desired position in <code>nav</code>.
+The label before the colon controls the menu text; the page's Markdown heading
+controls its visible heading.</p>
+<p>With <code>navigation.tabs</code> enabled, top-level groups such as <code>Get started</code> become
+tabs. Nested entries form their navigation menus. Removing a page from <code>nav</code>
+does not delete it or prevent MkDocs from building it.</p>
+<h3 id="enable-markdown-features">Enable Markdown features</h3>
+<p>The top-level <code>markdown_extensions</code> section enables syntax used by the example
+pages:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">attr_list</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.emoji</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">emoji_index</span><span class="p">:</span><span class="w"> </span><span class="kt">!!python/name:material.extensions.emoji.twemoji</span>
+<span class="w">      </span><span class="nt">emoji_generator</span><span class="p">:</span><span class="w"> </span><span class="kt">!!python/name:material.extensions.emoji.to_svg</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">def_list</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.tasklist</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">custom_checkbox</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tables</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.tabbed</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">alternate_style</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
+<p><code>attr_list</code> supports attributes such as the CSS classes used for
+<a href="../../style_examples/buttons/">buttons</a>. The other entries enable emoji and
+icons, definition lists, task lists, tables, enhanced fenced code blocks, and
+content tabs. Keep the extensions required by your pages. The extensions shown
+here are available with the Material for MkDocs installation.</p>
+<h3 id="add-project-specific-css-or-javascript">Add project-specific CSS or JavaScript</h3>
+<p>The project includes optional files in <code>docs/stylesheets/extra.css</code> and
+<code>docs/javascripts/extra.js</code>. Enable them by uncommenting the corresponding
+settings in <code>mkdocs.yml</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">extra_css</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stylesheets/extra.css</span>
+<span class="nt">extra_javascript</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">javascripts/extra.js</span>
+</code></pre></div>
+<p>These are top-level settings, not entries under <code>theme</code>. Paths are relative to
+<code>docs</code>. Use these files for project-specific additions rather than modifying
+Material's installed files. The Deltares stylesheet is already loaded by the
+template override; it does not need an <code>extra_css</code> entry.</p>
+<h2 id="preview-your-configuration">Preview your configuration</h2>
+<p>From the project root, with your Python environment activated, run:</p>
+<div class="highlight"><pre><span></span><code><span class="go">python -m mkdocs serve</span>
+</code></pre></div>
+<p>Open the local URL printed in the terminal. Save <code>mkdocs.yml</code> or a Markdown
+page to rebuild the preview automatically. Check the site title, navigation,
+images, and any Markdown features you use. If MkDocs reports an error, check
+YAML indentation and confirm that referenced pages and assets exist.</p>
+<p>Before publishing, build the static site:</p>
+<div class="highlight"><pre><span></span><code><span class="go">python -m mkdocs build</span>
+</code></pre></div>
+<p>For additional settings, see the
+<a href="https://www.mkdocs.org/user-guide/configuration/">MkDocs configuration reference</a>
+and the <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs documentation</a>.</p>
 
 
 
