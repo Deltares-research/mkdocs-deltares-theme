@@ -68,4 +68,4 @@ Press `Ctrl+C` to stop it.
 > [!NOTE]
 > Please note that the site is a work in progress.
 
-The site is available at [https://deltares.github.io/mkdocs-deltares-theme/](https://deltares.github.io/mkdocs-deltares-theme/).
+The site is available at [https://deltares-research.github.io/mkdocs-deltares-theme/](https://deltares-research.github.io/mkdocs-deltares-theme/).
