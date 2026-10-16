@@ -52,7 +52,7 @@ Deltares offers a number of hosting locations for your documentation site.
 
 ### GitHub
 
-```GitHub specific instructions for deploying your site can be found in the [GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages).```
+GitHub specific instructions for deploying your site can be found in the [GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages).
 
 The following GitHub pages locations are available for hosting your documentation site:
 
@@ -61,7 +61,7 @@ The following GitHub pages locations are available for hosting your documentatio
 
 ### GitLab
 
-```GitLab specific instructions for deploying your site can be found in the [GitLab Pages documentation](https://docs.gitlab.com/ee/user/project/pages/).```
+GitLab specific instructions for deploying your site can be found in the [GitLab Pages documentation](https://docs.gitlab.com/ee/user/project/pages/).
 
 
 Currently, Deltares does not offer GitLab Pages hosting for documentation sites. However, we are working on providing this in the neer future. 
