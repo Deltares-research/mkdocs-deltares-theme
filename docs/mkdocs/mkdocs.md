@@ -14,6 +14,6 @@ along with many features and customization options. It is widely used in the MkD
 
 ## Deltares MkDocs Template
 
-The [Deltares MkDocs Template](https://github.com/Deltares-research/mkdocs-deltares-template) is an adaptation of the Material for MkDocs theme. It provides stylesheet customizations that 
+The [Deltares MkDocs Template](https://github.com/Deltares-research/mkdocs-deltares-theme) is an adaptation of the Material for MkDocs theme. It provides stylesheet customizations that 
 offer users a simple way to design project documentation that is consistent in look and feel with [Deltares](https://www.deltares.nl/en/).
 
