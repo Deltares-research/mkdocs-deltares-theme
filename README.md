@@ -63,6 +63,30 @@ Open [http://127.0.0.1:8000/mkdocs-deltares-theme](http://127.0.0.1:8000/mkdocs-
 server rebuilds the site when documentation or configuration files change.
 Press `Ctrl+C` to stop it.
 
+## Use the theme in other sites (Python package)
+
+`build_package.py` generates an installable theme package (`deltares`) from
+`deltares/overrides`. It extends an installed base theme, so it works with
+`material` and `materialx`.
+
+```
+python -m pip install build twine
+python build_package.py --version 0.1.0 --base materialx --wheel   # wheel in dist/
+python build_package.py --version 0.1.0 --base materialx --upload  # publish to Nexus
+```
+
+Publishing goes to `https://internal-artifacts.deltares.nl/repository/python-dev/`
+and needs the `TWINE_USERNAME` and `TWINE_PASSWORD` environment variables.
+Bump `--version` for every upload; Nexus rejects re-uploads of an existing version.
+
+In the consuming site, install `mkdocs-deltares-theme` (for uv, add the Nexus
+`simple/` index as an explicit index) and set:
+
+```yaml
+theme:
+  name: deltares
+```
+
 ## Check out the site
 
 > [!NOTE]
