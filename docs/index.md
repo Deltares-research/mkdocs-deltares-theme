@@ -11,4 +11,5 @@ by providing some style examples and configurations.
 ## Contents
 
 * [`Get started with MkDocs`](mkdocs/mkdocs.md) - Get started with the Deltares MkDocs Template.
+* [`Package the theme`](mkdocs/package_the_theme.md) - Build, publish to Nexus and reuse the theme as a Python package.
 * [`Deltares style guide`](style_examples/buttons.md) - Examples showing some Deltares styles.

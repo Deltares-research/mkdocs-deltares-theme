@@ -26,6 +26,7 @@ theme:
     -
 markdown_extensions:
   - attr_list
+  - admonition
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -43,6 +44,7 @@ nav:
         - MkDocs: mkdocs/mkdocs.md
         - Create your site: mkdocs/create_your_site.md
         - Deploy your site: mkdocs/deploy_your_site.md
+        - Package the theme: mkdocs/package_the_theme.md
     - Deltares styles:
         - Buttons: style_examples/buttons.md
         - Headers: style_examples/headers.md
